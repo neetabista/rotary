@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 30px;
+}
+
+main {
+  margin-bottom: 6rem;
+}
+
+main .title {
+  font-size: 54px;
+  color: #1a1a1a;
+}
+
+main .resource-type-btn {
+  position: relative;
+}
+
+main .resource-type-btn:hover .dropdown-content {
+  display: block;
+}
+
+main .resource-type-btn:hover .resources-type {
+  border: 1px solid #e5e7eb;
+  justify-content: space-between;
+}
+
+main .resource-type-btn .resources-type {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+main .resource-type-btn .dropdown-content {
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px #e6e3e3;
+  display: none;
+  width: 100%;
+  z-index: 99;
+  padding-left: 10px;
+  transition: 0.3s ease;
+}
+
+main .resource-type-btn .dropdown-content #form input {
+  margin: 10px 0;
+}
+
+main .resource-type-btn .dropdown-content #form input[type=submit] {
+  background-color: #ddd;
+  padding: 10px 0;
+}
+
+main .resource-type-btn .dropdown-content #form label {
+  font-size: 17px;
+}
+
+main form input {
+  font-size: 16px;
+}
+
+main .box {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 3rem 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  position: relative;
+}
+
+main .box::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: 0;
+  padding: 3.5rem 4rem;
+  background-color: #ac1f2d;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+main .box:hover {
+  background-color: #ece3d4;
+  cursor: pointer;
+}
+
+main .box:hover .box-title {
+  color: #ac1f2d;
+}
+
+main .box:hover::before {
+  top: 0;
+  opacity: 1;
+}
+
+main .box:hover span {
+  z-index: 1;
+  position: relative;
+  color: #ffffff;
+}
+
+main .box .box-title {
+  font-size: 22px;
+  color: #000000;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+main .box img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+}
+
+main .box .read-btn {
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
